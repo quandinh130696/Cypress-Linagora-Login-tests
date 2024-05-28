@@ -1,0 +1,32 @@
+.nyc_output
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Coverage directory used by tools like istanbul
+coverage
+
+# snapshots from unit testings
+*.snap
+
+# Dependency directory
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
+node_modules
+dist
+output
+*.swp
+
+.DS_Store
+/.project
+.vscode
+.idea
+.scannerwork
+package-lock.json
+
+*.mp4
