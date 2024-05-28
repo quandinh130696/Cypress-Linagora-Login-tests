@@ -10,7 +10,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "cypress:open": "cypress open",
     "cypress:test": "cypress run --spec \"./cypress/e2e/login/login.spec.js\" -b chrome --headed",
-    "cypress:report": "cypress run --reporter mochawesome"
   },
   "author": "",
   "license": "ISC",
