@@ -1,12 +1,12 @@
 
 import usersData from "../../data/users.json";
 
-describe('Login test', function () {
+describe('Login test with invalid user', function () {
     beforeEach(() => {
         cy.visit('https://sso.linagora.com')
     })
 
     it('invalid login', function () {
-        cy.login(usersData.email, usersData.password);
+        cy.invalidLogin(usersData.email, usersData.password);
     })
 })

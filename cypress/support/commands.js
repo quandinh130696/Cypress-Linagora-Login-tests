@@ -1,7 +1,7 @@
 const loginObs = require('../objects/loginPage.json')
 require('@cypress/xpath');
 
-Cypress.Commands.add("login", (username, password) => {
+Cypress.Commands.add("invalidLogin", (username, password) => {
     
     // Enter a username at this step
     cy.xpath(loginObs.userfield)
