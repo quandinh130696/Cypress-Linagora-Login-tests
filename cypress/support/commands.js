@@ -2,7 +2,7 @@ const loginObs = require('../objects/loginPage.json')
 require('@cypress/xpath');
 
 Cypress.Commands.add("invalidLogin", (username, password) => {
-    
+
     // Enter a username at this step
     cy.xpath(loginObs.userfield)
         .type(username)
@@ -18,6 +18,6 @@ Cypress.Commands.add("invalidLogin", (username, password) => {
 
     // Invalid msg is visible
     cy.xpath(loginObs.loginMsg)
-    cy.contains('Wrong credentials')
+        .contains('Wrong credentials')
     cy.screenshot()
 })
