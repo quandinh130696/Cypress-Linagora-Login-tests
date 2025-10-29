@@ -9,15 +9,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cypress:open": "cypress open",
-    "cypress:test": "cypress run --spec \"./cypress/e2e/login/login.spec.js\" -b chrome --headed"
+    "cypress:test": "cypress run --spec 'cypress/tests/**/*.spec.js' --browser chrome --headless",
+    "parallel": "npm run clean:results && node cypress/support/run-parallel.js",
+    "clean:results": "rm -rf cypress/results/.jsons/*"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@cypress/xpath": "^2.0.3",
-    "cypress-mochawesome-reporter": "^3.8.2",
-    "mochawesome": "^7.1.3",
-    "mochawesome-merge": "^4.3.0",
-    "mochawesome-report-generator": "^6.2.0"
+    "concurrently": "^9.2.1",
+    "cypress-mochawesome-reporter": "^3.8.4",
+    "cypress-xpath": "^2.0.1",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^4.4.1",
+    "mochawesome-report-generator": "^6.3.0"
   }
 }

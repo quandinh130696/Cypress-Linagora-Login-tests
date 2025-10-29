@@ -1,6 +1,0 @@
-{
-        "userfield": "//input[@id='userfield']",
-        "passwordfield": "//input[@id='passwordfield']",
-        "loginBtn": "//button[@id='sign_in_button']",
-        "loginMsg": "//div[@class='a-form-explain']//span"
-}

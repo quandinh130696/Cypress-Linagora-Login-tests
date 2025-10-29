@@ -14,9 +14,10 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'
+// import './commands'
 import addContext from "mochawesome/addContext";
 import 'cypress-mochawesome-reporter/register';
+import 'cypress-xpath';
 
 
 
