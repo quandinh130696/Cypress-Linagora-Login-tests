@@ -27,7 +27,7 @@ const execAsync = promisify(exec);
 
         // === 2. Build Cypress run commands ===
         const commands = files.map(
-            file => `npx cypress run --spec "cypress/tests/${file}" --browser chrome --headed`
+            file => `npx cypress run --spec "cypress/tests/${file}" --browser chrome --headless`
         );
 
         console.log('Running Cypress specs in parallel:\n', commands.join('\n'));
