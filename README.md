@@ -38,7 +38,7 @@ https://github.com/quandinh130696/Cypress-Linagora-Login-tests.git
 3. run npm install
 
 # Run the tests
-npm run cypress:test                # Run all specs in tests with a headless mode
+npm run cypress:test                # Run all specs in tests with a headless mode  
 npm run parallel                    # Run all specs in parallel mode
 
 # Test report
